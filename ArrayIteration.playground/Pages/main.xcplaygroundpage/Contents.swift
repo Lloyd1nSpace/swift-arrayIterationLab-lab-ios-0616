@@ -39,13 +39,13 @@ for item in cart {
 /*: question5
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
-func shoppingCartItems (item: [String]) {
-    for item in cart {
+func shoppingCartItem (item: String) {
         print(item)
-    }
 }
 
-shoppingCartItems(cart)
+for item in cart {
+    shoppingCartItem(item)
+}
 /*: question6
  ### 4. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
  */
