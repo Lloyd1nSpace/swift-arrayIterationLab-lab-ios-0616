@@ -39,7 +39,7 @@ for item in cart {
 /*: question5
  ### 5. Take the list of shopping cart items you created in question 1 and print their values by passing each item in list to a function to be printed.
  */
-func shoppingCartItems (cart: [String]) {
+func shoppingCartItems (item: [String]) {
     for item in cart {
         print(item)
     }
@@ -60,11 +60,13 @@ let people = [
 func greeting (names: [String]) {
     for name in names {
         if name == "Michael" {
-            "Top of the morning \(name)"
+            print("Top of the morning \(name)")
         }
-        "Good morning \(name)"
+        print("Good morning \(name)")
     }
 }
+
+greeting(people)
 /*: question7
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
